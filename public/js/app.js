@@ -1,9 +1,7 @@
-import { Good } from "./goods/good.js";
 import { getHtml, possibleHash } from "./router.js";
 
 const app = document.querySelector("#app");
 let auth; // instance of Auth, which will be created in login view
-const good = new Good();
 
 document.addEventListener("DOMContentLoaded", () => {
   changePage("landing");
@@ -45,35 +43,16 @@ async function changePage(location) {
       auth.setLogoutBtn(document.querySelector(".logout-btn"));
       break;
     }
-    case "manage-goods": {
-      if (auth.isAdmin()) {
-        app.innerHTML = await getHtml(viewName);
-      }
-      good.setAddBtn(document.querySelector(".add-good-btn"));
-      good.setGoodsList(document.querySelector(".goods__list"));
-      good.setModal(document.querySelector("#modal"));
-      good.showAll(good.getGoodTypes(), true);
+    case "blog": {
+      app.innerHTML = await getHtml(viewName);
       break;
     }
     case "cats": {
       app.innerHTML = await getHtml(viewName);
-      good.setGoodsList(document.querySelector(".goods__list"));
-      good.setSortSelect(document.querySelector("#sort-form__select"));
-      good.showAll(["cats"], false);
       break;
     }
-    case "coffee": {
+    case "dogs": {
       app.innerHTML = await getHtml(viewName);
-      good.setGoodsList(document.querySelector(".goods__list"));
-      good.setSortSelect(document.querySelector("#sort-form__select"));
-      good.showAll(["coffee"], false);
-      break;
-    }
-    case "cart": {
-      app.innerHTML = await getHtml(viewName);
-      good.setGoodsList(document.querySelector(".goods__list"));
-      good.setTotalPriceNode(document.querySelector(".cart__price"));
-      good.showUserCart();
       break;
     }
     default: {
