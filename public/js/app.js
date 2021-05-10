@@ -24,7 +24,7 @@ async function changePage(location) {
       });
       break;
     }
-    case "opening-hours": {
+    case "responces": {
       document.querySelector(".shedule__title").scrollIntoView({
         behavior: "smooth"
       });
@@ -55,11 +55,11 @@ async function changePage(location) {
       good.showAll(good.getGoodTypes(), true);
       break;
     }
-    case "desserts": {
+    case "cats": {
       app.innerHTML = await getHtml(viewName);
       good.setGoodsList(document.querySelector(".goods__list"));
       good.setSortSelect(document.querySelector("#sort-form__select"));
-      good.showAll(["dessert"], false);
+      good.showAll(["cats"], false);
       break;
     }
     case "coffee": {

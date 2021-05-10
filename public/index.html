@@ -26,7 +26,7 @@
 
     <script>
       // Your web app's Firebase configuration
-      var firebaseConfig = {
+      let firebaseConfig = {
         apiKey: "AAAA-I2s63k:APA91bEU0xD7vTkYXLAiHHAabXtqB5Neo8Gf0EifeAlJD8RlY8bHt3QJtH3QQgUM_wKeOTvYUov-o57C8v97fYkvFLYva0pboK2Xn-L31Pnc_BmNdjWs5B8n_1GUPhqDPqTJuZxS8KsA",
           authDomain: "dogs-and-cats-perfect.firebaseapp.com",
           databaseURL: "https://coffee-b579a-default-rtdb.europe-west1.firebasedatabase.app",
@@ -57,7 +57,7 @@
       // the single page app to route accordingly.
       (function(l) {
         if (l.search[1] === '/' ) {
-          var decoded = l.search.slice(1).split('&').map(function(s) { 
+          let decoded = l.search.slice(1).split('&').map(function(s) { 
             return s.replace(/~and~/g, '&')
           }).join('?');
           window.history.replaceState(null, null,
@@ -92,16 +92,15 @@
                 <li class="navmenu__item"><a href="#landing">ABOUT</a></li>
                 <li class="navmenu__item"><a href="#blog">Blog</a></li>
                 <li class="sub-menu">
-                  <a class="sub-menu__btn">Our friends</a>
+                  <a class="sub-menu__btn">Our darlings</a>
                   <ul class="sub-menu__list">
-                    <li><a href="#">Price list </a></li>
-                    <li><a href="#desserts">Desserts</a></li>
-                    <li><a href="#coffee">Coffee</a></li>
-                    <li><a href="#">Other drinks</a></li>
+                    <li><a href="#dogs">Our dogs</a></li>
+                    <li><a href="#cats">Our cats</a></li>
+                    <li><a href="#puppies">Graduates</a></li>
                   </ul>
                 </li>
                 <li class="navmenu__item"><a href="#location">LOCATION</a></li>
-                <li class="navmenu__item"><a href="#opening-hours">OPENING HOURS</a></li>
+                <li class="navmenu__item"><a href="#responces">RESPONCES</a></li>
                 <li class="navmenu__item navmenu__login">
                   <a class="navmenu__login-link nav-link" href="#login">Login</a>
                 </li>
@@ -119,7 +118,7 @@
       <footer class="footer-wrapper">
         <div class="footer-element">
           <div class="footer-container shedule">
-            <h3 class="shedule__title">OPENING HOURS</h3>
+            <h3 class="shedule__title">RESPONCES</h3>
             <p class="shedule__item"><strong>Monday:</strong> 10:00 – 22:00</p>
             <p class="shedule__item"><strong>Tuesday:</strong> 10:00 – 22:00</p>
             <p class="shedule__item"><strong>Wednesday:</strong> 10:00 – 22:00</p>
