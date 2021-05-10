@@ -771,7 +771,7 @@ p {
 /*first-screen*/
 
 .first-screen {
-  min-height: 1080px;
+  min-height: 720px;
   background-image: url("../res/first-screen-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -785,7 +785,7 @@ p {
 }
 .first-screen__content {
   width: 669px;
-  height: 860px;
+  height: 540px;
   position: relative;
   top: 50px;
   font-family: Roboto;
@@ -815,11 +815,6 @@ p {
   line-height: 52px;
   /* margin-bottom: 190px; */
 }
-.first-screen__sub-desc {
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 52px;
-}
 
 @media screen and (max-width: 1919px) {
   .first-screen {
@@ -843,10 +838,6 @@ p {
     font-size: 30px;
     line-height: 52px;
     /* margin-bottom: 90px; */
-  }
-  .first-screen__sub-desc {
-    font-size: 30px;
-    line-height: 52px;
   }
 }
 
@@ -873,10 +864,6 @@ p {
     font-size: 20px;
     line-height: 47px;
     /* margin-bottom: 50px; */
-  }
-  .first-screen__sub-desc {
-    font-size: 20px;
-    line-height: 47px;
   }
 }
 
