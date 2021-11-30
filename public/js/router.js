@@ -6,7 +6,7 @@ const possibleHash = [
   "cats",
   "dogs",
   "location",
-  "responses",
+  "response",
   "profile",
   "cart",
   "manage-goods"
