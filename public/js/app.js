@@ -40,8 +40,9 @@ async function changePage(location) {
     }
     case "about":
     case "blog":
-    case "cats":
     case "dogs":
+    case "cats":
+    case "catpost1":
     case "location_landing":
     case "response":
     default: {
