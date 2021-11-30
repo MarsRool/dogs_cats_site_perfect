@@ -15,13 +15,6 @@ async function changePage(location) {
   if (!possibleHash.includes(viewName)) return;
 
   switch (viewName) {
-    case "location": {
-      app.innerHTML = await getHtml("landing");
-      document.getElementById(viewName).scrollIntoView({
-        behavior: "smooth"
-      });
-      break;
-    }
     case "login": {
       app.innerHTML = await getHtml(viewName);
       auth = new Auth({
@@ -49,6 +42,7 @@ async function changePage(location) {
     case "blog":
     case "cats":
     case "dogs":
+    case "location":
     case "response":
     default: {
       app.innerHTML = await getHtml(viewName);
