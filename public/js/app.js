@@ -17,7 +17,7 @@ async function changePage(location) {
   switch (viewName) {
     case "location": {
       app.innerHTML = await getHtml("landing");
-      document.getElementById("location").scrollIntoView({
+      document.getElementById(viewName).scrollIntoView({
         behavior: "smooth"
       });
       break;
@@ -35,6 +35,14 @@ async function changePage(location) {
     case "profile": {
       app.innerHTML = await getHtml(viewName);
       auth.setLogoutBtn(document.querySelector(".logout-btn"));
+      break;
+    }
+    case "team":
+    case "history": {
+      app.innerHTML = await getHtml("about");
+      document.getElementById(viewName).scrollIntoView({
+        behavior: "smooth"
+      });
       break;
     }
     case "about":
