@@ -43,6 +43,10 @@ async function changePage(location) {
       auth.setLogoutBtn(document.querySelector(".logout-btn"));
       break;
     }
+    case "about": {
+      app.innerHTML = await getHtml(viewName);
+      break;
+    }
     case "blog": {
       app.innerHTML = await getHtml(viewName);
       break;

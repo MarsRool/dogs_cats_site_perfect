@@ -2,6 +2,7 @@ const possibleHash = [
   "landing",
   "location",
   "responces",
+  "about",
   "blog",
   "login",
   "cats",
