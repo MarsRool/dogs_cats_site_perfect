@@ -521,6 +521,13 @@ header {
   object-fit: cover;
 }
 
+.relative-image {
+  box-shadow: 0 0 25px 0 black;
+  height: 350px;
+  width: auto;
+  object-fit: cover;
+}
+
 .video-responsive {
   padding-top: 10px;
   max-width: 800px;

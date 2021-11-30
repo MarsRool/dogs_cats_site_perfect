@@ -42,7 +42,7 @@ async function changePage(location) {
     case "blog":
     case "cats":
     case "dogs":
-    case "location":
+    case "location_landing":
     case "response":
     default: {
       app.innerHTML = await getHtml(viewName);
