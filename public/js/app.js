@@ -22,12 +22,6 @@ async function changePage(location) {
       });
       break;
     }
-    case "responces": {
-      document.querySelector(".shedule__title").scrollIntoView({
-        behavior: "smooth"
-      });
-      break;
-    }
     case "login": {
       app.innerHTML = await getHtml(viewName);
       auth = new Auth({
@@ -43,22 +37,11 @@ async function changePage(location) {
       auth.setLogoutBtn(document.querySelector(".logout-btn"));
       break;
     }
-    case "about": {
-      app.innerHTML = await getHtml(viewName);
-      break;
-    }
-    case "blog": {
-      app.innerHTML = await getHtml(viewName);
-      break;
-    }
-    case "cats": {
-      app.innerHTML = await getHtml(viewName);
-      break;
-    }
-    case "dogs": {
-      app.innerHTML = await getHtml(viewName);
-      break;
-    }
+    case "about":
+    case "blog":
+    case "cats":
+    case "dogs":
+    case "responses":
     default: {
       app.innerHTML = await getHtml(viewName);
     }

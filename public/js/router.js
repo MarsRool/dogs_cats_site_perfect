@@ -1,12 +1,12 @@
 const possibleHash = [
   "landing",
-  "location",
-  "responces",
   "about",
   "blog",
   "login",
   "cats",
   "dogs",
+  "location",
+  "responses",
   "profile",
   "cart",
   "manage-goods"
