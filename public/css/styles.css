@@ -528,6 +528,13 @@ header {
   object-fit: cover;
 }
 
+.big-image {
+  box-shadow: 0 0 25px 0 black;
+  height: 640px;
+  width: auto;
+  object-fit: cover;
+}
+
 .video-responsive {
   padding-top: 10px;
   max-width: 800px;
