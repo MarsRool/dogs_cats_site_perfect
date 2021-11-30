@@ -42,6 +42,10 @@ async function changePage(location) {
     case "blog":
     case "dogs":
     case "cats":
+    case "dogpost1":
+    case "dogpost2":
+    case "dogpost3":
+    case "dogpost4":
     case "catpost1":
     case "location_landing":
     case "response":
