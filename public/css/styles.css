@@ -699,6 +699,7 @@ p {
 .footer-wrapper {
   display: flex;
   gap: 30px;
+  background-color: #d8e1eb;
 }
 .socials {
   /* padding: 0 !important; */
