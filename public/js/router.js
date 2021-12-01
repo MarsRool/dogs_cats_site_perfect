@@ -18,6 +18,7 @@ const possibleHash = [
   "dogpost4",
   "cats",
   "catpost1",
+  "puppies",
   "location_landing",
   "response",
   "profile",
