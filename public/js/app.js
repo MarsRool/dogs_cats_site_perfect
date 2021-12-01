@@ -40,6 +40,12 @@ async function changePage(location) {
     }
     case "about":
     case "blog":
+    case "blogpost1":
+    case "blogpost2":
+    case "blogpost3":
+    case "blogpost4":
+    case "blogpost5":
+    case "blogpost6":
     case "dogs":
     case "cats":
     case "dogpost1":
